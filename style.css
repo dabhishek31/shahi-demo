@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 70px;
+  align-items: center;
+  display: flex;
+  padding: 0 24px;
+}
+
+.hamburger-icon {
+  flex: 2;
+}
+
+.hamburger-icon img {
+  width: 28px;
+  height: 19px;
+}
+
+.brand-icon {
+  display: flex;
+}
+.brand-icon img {
+  width: 72px;
+  height: 60px;
+}
+
+.main-pic {
+  position: relative;
+  width: 100%;
+}
+
+.main-pic img {
+  width: 100%;
+}
+
+.main-text {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  top: 0;
+}
+
+.container-text {
+  background-color: white;
+  opacity: 0.85;
+  border-radius: 8px;
+  padding: 16px 30px;
+  text-align: center;
+}
+
+.tangerine {
+  font-family: "Tangerine", cursive;
+}
+
+.dark-brown-text {
+  color: #700d0d;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+.w900 {
+  font-weight: 900;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+
+.connect {
+  display: flex;
+  width: 70%;
+  margin: 6px auto 8px;
+  justify-content: center;
+}
+
+.connect .social-icons img {
+  width: 20px;
+  height: 20px;
+}
+.connect .social-icons {
+  flex: 2;
+}
+
+.connect .connect-text {
+  line-height: 26px;
+  flex: 2;
+  text-align: center;
+}
+
+.openSans {
+  font-family: "Open Sans";
+}
+
+.services-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-text-services {
+  background-color: #a76c40;
+  display: inline;
+  color: white;
+  padding: 6px 0px;
+  border-radius: 8px;
+  width: 60%;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.services-card {
+  margin-top: 16px;
+  width: 60%;
+}
+
+.services-card img {
+  width: 100%;
+}
+
+.services-card .card-details {
+  background-color: #e2ccbe;
+  width: 80%;
+  margin: -4px auto 0;
+  text-align: center;
+  padding: 6px;
+  border: solid 1px black;
+  border-radius: 6px;
+  font-family: "Acme";
+  font-size: 16px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .f18 {
+    font-size: 24px;
+  }
+  .f20 {
+    font-size: 28px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .main-text {
+    margin-top: 18%;
+  }
+
+  .container-text {
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 8px;
+    padding: 36px 40px;
+    text-align: center;
+  }
+  
+  .f18 {
+    font-size: 32px;
+  }
+  .f20 {
+    font-size: 42px;
+  }
+}

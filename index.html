@@ -20,8 +20,10 @@
       rel="stylesheet"
     />
     <title>Shahi Tours & Travel</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
+    <div class="overlay"><div>Loading...</div></div>
     <div id="header" class="header">
       <div class="hamburger-icon">
         <img
@@ -106,11 +108,9 @@
         />
         <img src="./assets/images/toursmanagement.png" alt="Hamburger Icon" />
       </div>
-     <div class="historyHeadingContainer">
-      <div class="historyheading">
-        OUR HISTORY
+      <div class="historyHeadingContainer">
+        <div class="historyheading">OUR HISTORY</div>
       </div>
-     </div>
       <div class="historyText">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -118,13 +118,14 @@
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. <br /> <br />Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
+        mollit anim id est laborum. <br />
+        <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
       </div>
     </div>
 
@@ -167,5 +168,33 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+
+    $(document).ready(function () {
+      // Images loaded is zero because we're going to process a new set of images.
+      var imagesLoaded = 0;
+      // Total images is still the total number of <img> elements on the page.
+      var totalImages = $("img").length;
+
+      // Step through each image in the DOM, clone it, attach an onload event
+      // listener, then set its source to the source of the original image. When
+      // that new image has loaded, fire the imageLoaded() callback.
+      $("img").each(function (idx, img) {
+        $("<img>").on("load", imageLoaded).attr("src", $(img).attr("src"));
+      });
+
+      // Do exactly as we had before -- increment the loaded count and if all are
+      // loaded, call the allImagesLoaded() function.
+      function imageLoaded() {
+        imagesLoaded++;
+        if (imagesLoaded == totalImages) {
+          allImagesLoaded();
+        }
+      }
+
+      function allImagesLoaded() {
+        console.log("ALL IMAGES LOADED");
+        document.querySelector(".overlay").style.display = "none";
+      }
+    });
   </script>
 </html>

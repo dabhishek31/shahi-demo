@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family:'Raleway', sans-serif;
 }
 
 .header {
@@ -90,8 +91,7 @@ body {
 
 .connect {
   display: flex;
-  /* width: 70%; */
-  margin: 6px auto 8px;
+  margin: 6px auto;
   justify-content: center;
 }
 
@@ -100,20 +100,24 @@ body {
   height: 30px;
 }
 .connect .social-icons {
-  flex: 7;
+  flex: 11;
 }
 
 .connect .connect-text {
   line-height: 32px;
-  flex: 6;
+  flex: 10;
   text-align: right;
+  font-weight: 200;
 }
 
-.openSans {
-  font-family: "Open Sans";
+.divider{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(49, 49, 49,50%);
 }
 
 .services-heading {
+  margin-top: 14px;
   display: flex;
   justify-content: center;
 }
@@ -152,8 +156,7 @@ body {
   padding: 6px;
   border: solid 1px black;
   border-radius: 6px;
-  font-family: "Acme";
-  font-size: 16px;
+  font-size: 12px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

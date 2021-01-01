@@ -152,6 +152,11 @@ div.overlay {
   color: #700d0d;
 }
 
+.w400 {
+  font-weight: 400;
+}
+
+
 .w700 {
   font-weight: 700;
 }
@@ -300,7 +305,7 @@ div.overlay {
 }
 
 .historyBackground img {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .sidenav {

@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
+
+  /* font-family: 'Great Vibes', cursive;
+  font-family: 'Tangerine', cursive; */
 }
 
 .header {
@@ -87,10 +91,10 @@ body {
 .f24 {
   font-size: 24px;
 }
+
 .connect {
   display: flex;
-  /* width: 70%; */
-  margin: 6px auto 8px;
+  margin: 6px auto;
   justify-content: center;
 }
 
@@ -99,20 +103,26 @@ body {
   height: 30px;
 }
 .connect .social-icons {
-  flex: 7;
+  flex: 11;
 }
 
 .connect .connect-text {
   line-height: 32px;
-  flex: 6;
+  flex: 10;
   text-align: right;
+  font-weight: 400;
 }
 
-.openSans {
-  font-family: "Open Sans";
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(49, 49, 49, 50%);
 }
+
+
 
 .services-heading {
+  margin-top: 14px;
   display: flex;
   justify-content: center;
 }
@@ -132,6 +142,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+  background: url(./assets/images/illustrator.png) center center;
+  background-size: cover;
 }
 
 .services-card {
@@ -151,8 +163,8 @@ body {
   padding: 6px;
   border: solid 1px black;
   border-radius: 6px;
-  font-family: "Acme";
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

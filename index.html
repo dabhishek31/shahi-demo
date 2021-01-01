@@ -19,7 +19,7 @@
     <title>Shahi Tours & Travel</title>
   </head>
   <body>
-    <div class="header">
+    <div id="header" class="header">
       <div class="hamburger-icon">
         <img src="./assets/images/hamburger.png" alt="Hamburger Icon" />
       </div>
@@ -35,11 +35,11 @@
       <img src="./assets/images/mainBg.png" alt="" />
       <div class="main-text">
         <div class="container-text tangerine">
-          <div class="f22 w700 dark-brown-text">Welcome To</div>
-          <div class="f24 w700 dark-brown-text">
+          <div class="f24 w700 dark-brown-text">Welcome To</div>
+          <div class="f26 w700 dark-brown-text">
             Shahi Tours & Event Management
           </div>
-          <div class="f22 w700 dark-brown-text">
+          <div class="f24 w700 dark-brown-text">
             Your dreams are our responsibility
           </div>
         </div>
@@ -91,4 +91,20 @@
       </div>
     </div>
   </body>
+
+  <script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  console.log(window.pageYOffset+ ">"+ sticky);
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+  </script>
 </html>

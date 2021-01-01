@@ -46,8 +46,7 @@ body {
 }
 
 .container-text {
-  background-color: white;
-  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 80%);
   border-radius: 8px;
   padding: 16px 30px;
   text-align: center;
@@ -81,26 +80,29 @@ body {
   font-size: 20px;
 }
 
+.f22 {
+  font-size: 22px;
+}
 
 .connect {
   display: flex;
-  width: 70%;
+  /* width: 70%; */
   margin: 6px auto 8px;
   justify-content: center;
 }
 
 .connect .social-icons img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .connect .social-icons {
-  flex: 2;
+  flex: 7;
 }
 
 .connect .connect-text {
-  line-height: 26px;
-  flex: 2;
-  text-align: center;
+  line-height: 32px;
+  flex: 6;
+  text-align: right;
 }
 
 .openSans {
@@ -150,7 +152,6 @@ body {
   font-size: 16px;
 }
 
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .f18 {
     font-size: 24px;
@@ -159,7 +160,6 @@ body {
     font-size: 28px;
   }
 }
-
 
 @media (min-width: 1024px) {
   .main-text {
@@ -173,7 +173,7 @@ body {
     padding: 36px 40px;
     text-align: center;
   }
-  
+
   .f18 {
     font-size: 32px;
   }

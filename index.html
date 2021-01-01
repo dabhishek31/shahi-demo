@@ -99,11 +99,14 @@ var header = document.getElementById("header");
 var sticky = header.offsetTop;
 
 function myFunction() {
-  console.log(window.pageYOffset+ ">"+ sticky);
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+  if (window.scrollY > sticky) {
+    if(!header.classList.contains("sticky")){
+      header.classList.add("sticky");
+      document.querySelector('.main-pic').style.marginTop='70px';
+    }
   } else {
     header.classList.remove("sticky");
+    document.querySelector('.main-pic').style.marginTop='0px';
   }
 }
   </script>

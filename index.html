@@ -14,14 +14,17 @@
       href="/assets/images/shahiTour.png"
       type="image/x-icon"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@100;200;300;400;500;700;800&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@100;200;300;400;500;700;800&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Shahi Tours & Travel</title>
   </head>
   <body>
     <div id="header" class="header">
-      <div class="hamburger-icon">
-        <img src="./assets/images/hamburger.png" alt="Hamburger Icon" />
+      <div class="hamburger-icon" >
+        <img onclick="openNav()" src="./assets/images/hamburger.png" alt="Hamburger Icon" />
       </div>
       <div class="brand-icon">
         <img
@@ -48,7 +51,7 @@
     <div class="divider"></div>
     <div class="connect w700">
       <div class="connect-text f16">Connect with us</div>
-      <div style="flex:1"></div>
+      <div style="flex: 1"></div>
       <div class="social-icons">
         <img src="./assets/images/facebook.png" alt="" />
         <img src="./assets/images/instagram.png" alt="" />
@@ -90,24 +93,43 @@
         <div class="card-details">Decorations</div>
       </div>
     </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
   </body>
 
   <script type="text/javascript">
-window.onscroll = function() {myFunction()};
+    window.onscroll = function () {
+      myFunction();
+    };
 
-var header = document.getElementById("header");
-var sticky = header.offsetTop;
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.scrollY > sticky) {
-    if(!header.classList.contains("sticky")){
-      header.classList.add("sticky");
-      document.querySelector('.main-pic').style.marginTop='70px';
+    function myFunction() {
+      if (window.scrollY > sticky) {
+        if (!header.classList.contains("sticky")) {
+          header.classList.add("sticky");
+          document.querySelector(".main-pic").style.marginTop = "70px";
+        }
+      } else {
+        header.classList.remove("sticky");
+        document.querySelector(".main-pic").style.marginTop = "0px";
+      }
     }
-  } else {
-    header.classList.remove("sticky");
-    document.querySelector('.main-pic').style.marginTop='0px';
-  }
-}
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
   </script>
 </html>

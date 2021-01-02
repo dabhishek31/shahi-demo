@@ -465,8 +465,9 @@ div.overlay {
 
 .copyright {
   padding: 20px;
-  width: 90%;
+  width: 85%;
   font-weight: 600;
+  margin: 0 auto;
 }
 
 .sidenav {

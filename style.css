@@ -317,7 +317,8 @@ div.overlay {
     #ff9463 80.21%,
     #ca834d 100%
   );
-  border-radius: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   padding: 24px 0px;
 }
 
@@ -382,6 +383,89 @@ div.overlay {
   justify-content: center;
 }
 .bold {
+  font-weight: 600;
+}
+
+.contactUs {
+  margin-top: 2px;
+  background: linear-gradient(180deg, #b04848 0%, #a24a4a 47.92%, #7b3636 100%);
+  padding: 20px;
+}
+
+.contactUsheadingContainer {
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  width: max-content;
+  padding: 8px 16px;
+  margin:10px auto;
+  margin-bottom: 16px;
+}
+.contactUs {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.formField {
+  margin-bottom: 10px;
+}
+
+.formField .labelText {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.formField select option {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+.formField select  {
+  margin-top: 4px;
+}
+.formField input,
+.formField select,
+.formField textarea {
+  font-size: 16px;
+  font-weight: 200;
+  background: transparent;
+  border-style: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  color: white;
+}
+.form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.formButton {
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  width: max-content;
+  padding: 10px 16px;
+  margin-top: 20px;
+}
+
+.orText {
+  width: max-content;
+  margin: 30px auto;
+}
+
+.mailUs {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+.mailUsText {
+  margin-bottom: 6px;
+}
+
+.copyright {
+  padding: 20px;
+  width: 90%;
   font-weight: 600;
 }
 

@@ -156,7 +156,6 @@ div.overlay {
   font-weight: 400;
 }
 
-
 .w700 {
   font-weight: 700;
 }
@@ -306,6 +305,84 @@ div.overlay {
 
 .historyBackground img {
   opacity: 0.2;
+}
+
+.clientReview {
+  margin-top: 24px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffcebd 35.94%,
+    #ff9979 61.98%,
+    #ff9463 80.21%,
+    #ca834d 100%
+  );
+  border-radius: 12px;
+  padding: 24px 0px;
+}
+
+.clientHeading {
+  display: flex;
+  width: max-content;
+  margin: 10px auto 16px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c2c2c;
+}
+
+.hero {
+  position: relative;
+  background: rgba(255, 255, 255, 0.64);
+  width: 70%;
+  margin: 0 auto;
+  padding: 22px;
+  font-size: 14px;
+  text-align: justify;
+  border-radius: 12px;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 22%;
+  margin-left: -35px;
+  width: 0;
+  height: 0;
+  border-top: solid 10px rgba(255, 255, 255, 0.64);
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+}
+.cardReview {
+  margin-bottom: 22px;
+}
+.userDetails {
+  width: 71%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+}
+.userDetails img {
+  width: 54px;
+  height: 54px;
+}
+.username {
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-left: 12px;
+  padding: 5px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bold {
+  font-weight: 600;
 }
 
 .sidenav {

@@ -6,6 +6,21 @@ body {
   font-family: 'Tangerine', cursive; */
 }
 
+.upArrow {
+  position: FIXED;
+  bottom: 20px;
+  z-index: 999 !important;
+  right: 10px;
+  border-radius: 100% !important;
+}
+.upArrow img {
+  border-radius: 100% !important;
+  box-shadow: 2px 2px 20px black;
+  
+  height: 40px;
+  width: 40px;
+}
+
 div.overlay {
   display: table;
   position: fixed;
@@ -142,6 +157,15 @@ div.overlay {
   border-radius: 8px;
   padding: 16px 20px;
   text-align: center;
+}
+
+.brandName {
+  font-size: 28px;
+  font-weight: 700;
+}
+.brandTitle {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .tangerine {
@@ -397,7 +421,7 @@ div.overlay {
   border: 1px solid #ffffff;
   width: max-content;
   padding: 8px 16px;
-  margin:10px auto;
+  margin: 10px auto;
   margin-bottom: 16px;
 }
 .contactUs {
@@ -420,7 +444,7 @@ div.overlay {
   font-size: 16px;
   font-weight: 400;
 }
-.formField select  {
+.formField select {
   margin-top: 4px;
 }
 .formField input,
@@ -523,10 +547,43 @@ div.overlay {
 }
 
 @media (min-width: 1024px) {
+  .header {
+    /* 
+    align-items: center;
+    display: flex;
+    position: relative; */
+    height: 90px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px black;
+    z-index: 10;
+  }
+
+  .brand-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    width: 100%;
+  }
+
+  .brand-icon .img:first-child {
+    margin-left: 40px;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
   .main-text {
     margin-top: 18%;
   }
-
   .container-text {
     background-color: white;
     opacity: 0.85;
@@ -535,10 +592,12 @@ div.overlay {
     text-align: center;
   }
 
-  .f18 {
-    font-size: 32px;
+  .brandName {
+    font-size: 48px;
+    font-weight: 700;
   }
-  .f20 {
-    font-size: 42px;
+  .brandTitle {
+    font-size: 28px;
+    font-weight: 400;
   }
 }

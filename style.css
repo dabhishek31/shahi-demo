@@ -6,17 +6,16 @@ body {
   font-family: 'Tangerine', cursive; */
 }
 
-.upArrow {
-  position: FIXED;
+/* .upArrow {
+  
+} */
+.upArrow img {
+  position: fixed;
   bottom: 20px;
   z-index: 999 !important;
   right: 10px;
   border-radius: 100% !important;
-}
-.upArrow img {
-  border-radius: 100% !important;
-  box-shadow: 2px 2px 20px black;
-  
+  box-shadow:0px 0px 15px #333333;
   height: 40px;
   width: 40px;
 }
